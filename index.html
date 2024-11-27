@@ -11,7 +11,6 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.css">
   <style>
     /* Gaya untuk menjaga gambar agar tetap 4:3 */
     .aspect-4-3 {
@@ -31,12 +30,18 @@
   </style>
 </head>
 <body class="bg-gray-100">
-
   <!-- Navbar -->
   <nav class="bg-gray-800">
     <div class="container mx-auto flex items-center justify-between px-6 py-4">
       <div class="text-white text-lg font-semibold">Selamat Hari Guru</div>
-      <div class="hidden md:flex space-x-4">
+      <div class="flex md:hidden">
+        <button id="navbar-toggle" class="text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="navbar-links" class="hidden md:flex space-x-4">
         <a href="#home" class="text-gray-300 hover:text-white">Beranda</a>
         <a href="#products" class="text-gray-300 hover:text-white">Mini Album</a>
         <a href="#terimakasih" class="text-gray-300 hover:text-white">Terima Kasih, Pak!</a>
@@ -46,10 +51,10 @@
 
   <!-- Hero Section -->
   <header class="bg-white shadow">
-    <div class="container mx-auto px-6 py-16 text-center">
-      <h1 class="text-4xl font-bold text-gray-900" data-aos="fade-up" data-aos-duration="1000">Selamat Hari Guru, Bapak Muhammad Fahreza S.Pd!</h1>
-      <p class="mt-4 text-gray-600" data-aos="fade-up" data-aos-duration="1200">Kami sangat bersyukur bisa memiliki guru dan pembina yang luar biasa seperti Bapak. Terima kasih sudah memberikan banyak pelajaran hidup yang tidak ternilai.</p>
-      <a href="#album" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700" data-aos="fade-up" data-aos-duration="1500">Lihat Foto Yuk!</a>
+    <div class="container mx-auto px-6 py-16 text-center" data-aos="fade-up">
+      <h1 class="text-4xl font-bold text-gray-900">Selamat Hari Guru, Bapak Muhammad Fahreza S.Pd!</h1>
+      <p class="mt-4 text-gray-600">Kami sangat bersyukur bisa memiliki guru dan pembina yang luar biasa seperti Bapak. Terima kasih sudah memberikan banyak pelajaran hidup yang tidak ternilai.</p>
+      <a href="#album" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700">Lihat Foto Yuk!</a>
     </div>
   </header>
 
@@ -58,7 +63,7 @@
     <div class="container mx-auto">
       <div class="flex flex-wrap gap-4">
         <!-- Foto 1 -->
-        <div class="bg-white rounded-lg shadow-md p-4 w-full md:w-1/3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="bg-white rounded-lg shadow-md p-4 w-full md:w-1/3" data-aos="fade-up">
           <div class="aspect-4-3">
             <img src="1.jpg" alt="Foto Bersama Guru 1" class="w-full rounded-t-lg">
           </div>
@@ -66,7 +71,7 @@
           <p class="text-gray-600">Terimakasih Pak atas dukungan yang tiada henti untuk kami!</p>
         </div>
         <!-- Foto 2 -->
-        <div class="bg-white rounded-lg shadow-md p-4 w-full md:w-1/3" data-aos="fade-up" data-aos-duration="1100">
+        <div class="bg-white rounded-lg shadow-md p-4 w-full md:w-1/3" data-aos="fade-up" data-aos-delay="100">
           <div class="aspect-4-3">
             <img src="3.jpg" alt="Foto Bersama Guru 2" class="w-full rounded-t-lg">
           </div>
@@ -74,7 +79,7 @@
           <p class="text-gray-600">Kami sangat bangga bisa belajar dari Bapak yang luar biasa ini!</p>
         </div>
         <!-- Foto 3 -->
-        <div class="bg-white rounded-lg shadow-md p-4 w-full md:w-1/3" data-aos="fade-up" data-aos-duration="1200">
+        <div class="bg-white rounded-lg shadow-md p-4 w-full md:w-1/3" data-aos="fade-up" data-aos-delay="200">
           <div class="aspect-4-3">
             <img src="2.jpg" alt="Foto Bersama Guru 3" class="w-full rounded-t-lg">
           </div>
@@ -87,11 +92,11 @@
 
   <!-- Contact Section -->
   <section id="terimakasih" class="bg-gray-50 py-16">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-gray-800" data-aos="fade-up" data-aos-duration="1000">Terima Kasih, Pak!</h2>
-      <p class="text-gray-600 mt-4" data-aos="fade-up" data-aos-duration="1200">Halo Pak! Selamat Hari Guru, semoga selalu diberikan kesehatan dan kebahagiaan.</p>
-      <p class="text-gray-600 mt-4" data-aos="fade-up" data-aos-duration="1400">Kami tidak bisa mengungkapkan betapa berharganya segala ilmu dan bimbingan yang Bapak berikan. Terima kasih sudah menjadi pembina sekaligus guru agama terbaik untuk kami, BDI, dan Vohisma. Kami bangga memiliki pembina seperti Pak Reza. Semoga Bapak selalu diberkahi, dan dapat terus menemani kami hingga akhir masa jabatan, bahkan untuk generasi mendatang! :)</p>
-      <p class="text-gray-600 mt-4" data-aos="fade-up" data-aos-duration="1600">- Dari Kami, Pengurus Harian masa bakti 2024-2025</p>
+    <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-gray-800">Terima Kasih, Pak!</h2>
+      <p class="text-gray-600 mt-4">Halo Pak! Selamat Hari Guru, semoga selalu diberikan kesehatan dan kebahagiaan.</p>
+      <p class="text-gray-600 mt-4">Kami tidak bisa mengungkapkan betapa berharganya segala ilmu dan bimbingan yang Bapak berikan. Terima kasih sudah menjadi pembina sekaligus guru agama terbaik untuk kami, BDI, dan Vohisma. Kami bangga memiliki pembina seperti Pak Reza. Semoga Bapak selalu diberkahi, dan dapat terus menemani kami hingga akhir masa jabatan, bahkan untuk generasi mendatang! :)</p>
+      <p class="text-gray-600 mt-4">- Dari Kami, Pengurus Harian masa bakti 2024-2025</p>
     </div>
   </section>
 
@@ -103,8 +108,14 @@
   </footer>
 
   <script>
-    // Inisialisasi AOS
     AOS.init();
+    // Toggle Navbar for Mobile
+    const toggleButton = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
