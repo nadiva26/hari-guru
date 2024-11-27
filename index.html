@@ -43,14 +43,14 @@
       </div>
       <div id="navbar-links" class="hidden md:flex space-x-4">
         <a href="#home" class="text-gray-300 hover:text-white">Beranda</a>
-        <a href="#album" class="text-gray-300 hover:text-white">Mini Album</a>
+        <a href="#album" class="text-gray-300 hover:text-white" id="scroll-to-album">Mini Album</a>
         <a href="#terimakasih" class="text-gray-300 hover:text-white">Terima Kasih, Pak!</a>
       </div>
     </div>
     <!-- Navbar Mobile -->
     <div id="navbar-links-mobile" class="md:hidden hidden bg-gray-800 px-6 py-4 space-y-4">
       <a href="#home" class="text-gray-300 hover:text-white block">Beranda</a>
-      <a href="#products" class="text-gray-300 hover:text-white block">Mini Album</a>
+      <a href="#album" class="text-gray-300 hover:text-white block">Mini Album</a>
       <a href="#terimakasih" class="text-gray-300 hover:text-white block">Terima Kasih, Pak!</a>
     </div>
   </nav>
@@ -121,6 +121,15 @@
 
     toggleButton.addEventListener('click', () => {
       navbarLinks.classList.toggle('hidden');
+    });
+
+    // Smooth Scroll to Album Section
+    const albumLink = document.getElementById('scroll-to-album');
+    albumLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      document.querySelector('#album').scrollIntoView({
+        behavior: 'smooth'
+      });
     });
   </script>
 </body>
